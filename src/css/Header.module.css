@@ -1,0 +1,36 @@
+header {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  margin-top: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+}
+
+header > a {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(34, 34, 34);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+header > a:hover {
+  opacity: 0.6;
+}
+
+header h1 {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 2.8rem;
+  height: 2.8rem;
+}
