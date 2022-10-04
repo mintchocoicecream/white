@@ -1,3 +1,5 @@
+import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 function Profile(){
@@ -48,31 +50,31 @@ function Profile(){
                 <div className="profileLinks">
                   <h4>Links</h4>
                   <div>
-                    <span>github</span>
-                    <span>notion</span>
+                    <a href="https://github.com/mintchocoicecream">github</a>
+                    <a href="https://mintchocoicecream.notion.site/Dev-133e8a6d037449aeb49f616cc9836f78">notion</a>
                   </div>
                 </div>
               </div>
               <div className="profileTwo">
-                <div className="profileEdu">
-                  <p>2013.03 ~ 2017.02</p>
-                  <span>경상국립대학교 정보통신공학과</span>
+                <div className="profileCareer">
+                  <p>2021.04.19 ~ 2021.06.30</p>
+                  <span>- (주)리안 개발팀 R&D 연구원</span>
+                  <p>&nbsp;&nbsp;인공지능 IP 카메라 NVR 프로그램 개발 담당</p>
+                  <span><p>&nbsp;&nbsp;(스택: Python, OpenCV, QtPy5, QtDesigner)</p></span>
                 </div>
                 <div className="profileClass">
                   <p>2020.05.19 ~ 2020.11.22</p>
-                  <span>머신러닝 개발자 양성 교육 과정 이수 <p>(소속: 한국품질재단)</p></span>
+                  <span>- 머신러닝 개발자 양성 교육 과정 이수 <p>&nbsp;&nbsp;(소속: 한국품질재단)</p></span>
                 </div>
-                <div className="profileCareer">
-                  <p>2021.04.19 ~ 2021.06.30</p>
-                  <span>(주)리안 개발팀 R&D 연구원</span>
-                  <p>인공지능 IP 카메라 NVR 프로그램 개발 담당</p>
-                  <p>사용 기술: Python, OpenCV, QtPy5, QtDesigner</p>
+                <div className="profileEdu">
+                  <p>2013.03 ~ 2017.02</p>
+                  <span>- 경상국립대학교 정보통신공학과</span>
                 </div>
                 <div className="profileCer">
                   <h4>Certificate</h4>
-                  <p>- JLPT N3 2022.08.10</p>
-                  <p>- Toeic 800 2020.10.10</p>
-                  <p>- AdsP 데이터분석준전문가 2020.09.29</p>
+                  <p><FontAwesomeIcon icon={faCircleCheck}></FontAwesomeIcon> JLPT N3 <span>(2022.08.10)</span></p>
+                  <p><FontAwesomeIcon icon={faCircleCheck}></FontAwesomeIcon> Toeic 800 <span>(2020.10.10)</span></p>
+                  <p><FontAwesomeIcon icon={faCircleCheck}></FontAwesomeIcon> AdsP 데이터분석준전문가 <span>(2020.09.29)</span></p>
                 </div>
               </div>
             </div>

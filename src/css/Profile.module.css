@@ -16,6 +16,7 @@
   margin: 10px;
   padding: 10px 15px;
   opacity: 0;
+  background-color: var(--boxColor);
   border: 3px solid var(--mainColor);
   animation: showContent 1s ease-in-out forwards;
 }
@@ -93,21 +94,23 @@
 }
 
 .contact span,
-.profileLinks span {
+.profileLinks a {
   cursor: pointer;
   font-size: 1em;
   padding-bottom: 2px;
   border-bottom: 1px solid gray;
   transition: all 0.2s ease-in-out;
+  color: rgba(0, 0, 0, 0.9);
+  text-decoration: none;
 }
 
 .contact span:hover,
-.profileLinks > div > span:hover {
+.profileLinks > div > a:hover {
   color: var(--mainColor);
   border-bottom: 1px solid var(--mainColor);
 }
 
-.profileLinks > div > span {
+.profileLinks > div > a {
   margin: 0 8px;
 }
 
@@ -129,4 +132,8 @@
 .profileCer h4 {
   padding-bottom: 5px;
   border-bottom: 1px solid var(--mainColor);
+}
+
+.profileCer span {
+  font-size: 0.8em;
 }
