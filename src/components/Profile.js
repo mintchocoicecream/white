@@ -1,8 +1,19 @@
 import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useState } from "react";
+import Contact from "./Contact";
 
 function Profile(){
+  const [contact, setContact] = useState(false);
+  function onContact(){
+    if(contact===false){
+      setContact(true);
+    }
+  }
+  function onClose(){
+    setContact(false);
+  }
     return(
         <div className="mainProfile">
             <div className="profile">
@@ -45,7 +56,7 @@ function Profile(){
                 </div>
                 <div className="contact">
                   <h4>Contact</h4>
-                  <span>mintchocoicecream@gmail.com</span>
+                  <span onClick={onContact}>mintchocoicecream@gmail.com</span>
                 </div>
                 <div className="profileLinks">
                   <h4>Links</h4>
@@ -73,12 +84,20 @@ function Profile(){
                 <div className="profileCer">
                   <h4>Certificate</h4>
                   <p><FontAwesomeIcon icon={faCircleCheck}></FontAwesomeIcon> JLPT N3 <span>(2022.08.10)</span></p>
-                  <p><FontAwesomeIcon icon={faCircleCheck}></FontAwesomeIcon> Toeic 800 <span>(2020.10.10)</span></p>
-                  <p><FontAwesomeIcon icon={faCircleCheck}></FontAwesomeIcon> AdsP 데이터분석준전문가 <span>(2020.09.29)</span></p>
+                  <p><FontAwesomeIcon icon={faCircleCheck}></FontAwesomeIcon> TOEIC 800 <span>(2020.10.10)</span></p>
+                  <p><FontAwesomeIcon icon={faCircleCheck}></FontAwesomeIcon> ADsP 데이터분석준전문가 <span>(2020.09.29)</span></p>
                 </div>
               </div>
+              {contact===true&&(
+                  <div className="contactForms">
+                    <Contact />
+                    <div className="close">
+                      <span onClick={onClose}><FontAwesomeIcon icon={faXmark}></FontAwesomeIcon></span>
+                    </div>
+                  </div>
+              )}
             </div>
-          </div>
+        </div>
     )
 }
 

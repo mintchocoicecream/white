@@ -9,7 +9,7 @@ function Projects(){
                 <span>CSS Layout Challenge</span>
               </div>
               <div className="project">
-                <div className="projImg" style={{backgroundColor:"orange"}}></div>
+                <div className="projImg"></div>
                 <span>GreenE</span>
               </div>
               <div className="project">

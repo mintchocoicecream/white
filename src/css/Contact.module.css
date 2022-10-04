@@ -1,0 +1,60 @@
+.contactForms {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 10%;
+  width: 96%;
+  height: 80%;
+  background-color: var(--mainColor);
+  opacity: 0;
+  animation: showContact 1s ease-in-out forwards;
+}
+
+@keyframes showContact {
+  from {
+    transform: translateX(-5%);
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+
+.contactFrame,
+.contactForm,
+.success {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactFrame {
+  margin: 0% 3%;
+  height: 85%;
+  background-color: var(--mainColor);
+  border: 5px solid var(--boxColor);
+  padding: 2%;
+}
+
+.contactForm {
+  justify-content: space-between;
+  height: 100%;
+}
+
+.success {
+  visibility: hidden;
+  width: inherit;
+  align-items: center;
+}
+
+.close {
+  position: absolute;
+  right: 1%;
+  top: 0;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.close:hover {
+  color: black;
+}

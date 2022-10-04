@@ -2,12 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap");
 @import "css/Home.module.css";
 @import "css/Profile.module.css";
+@import "css/Contact.module.css";
 @import "css/Projects.module.css";
 @import "css/Header.module.css";
 @import "css/Nav.module.css";
 
 :root {
-  --mainColor: rgb(109, 109, 163);
+  /* --mainColor: rgb(109, 109, 163); */
+  /* --mainColor: rgb(165, 165, 204); */
+  --mainColor: rgb(244, 207, 0);
+  --boxColor: white;
   --font: "Noto Sans KR", sans-serif;
   --fontSerif: "Noto Serif KR", serif;
 }
@@ -16,6 +20,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  /* background-color: var(--mainColor); */
 }
 
 body::-webkit-scrollbar {
@@ -25,7 +30,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: var(--mainColor);
+  background: orange;
 }
 
 #root {
