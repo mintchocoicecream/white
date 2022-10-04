@@ -1,0 +1,51 @@
+.onlyProj {
+  padding-top: 10%;
+  display: flex;
+  height: 100vh;
+}
+
+.mainPj {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.onlyProj > .mainPj {
+  margin: 0 10%;
+}
+
+.projects {
+  display: grid;
+  width: 100%;
+  margin: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  background-color: var(--mainColor);
+  gap: 2px;
+  border: 3px solid var(--mainColor);
+  text-align: center;
+  opacity: 0;
+  animation: showContent 1s ease-in-out forwards;
+  animation-delay: 0.8s;
+}
+
+.onlyProj .projects {
+  animation-delay: 0s;
+}
+
+.project {
+  background-color: white;
+  cursor: pointer;
+}
+
+.project:hover {
+  opacity: 0.8;
+}
+
+.projImg {
+  height: 90%;
+}
+
+.project span {
+  font-size: 0.9em;
+}

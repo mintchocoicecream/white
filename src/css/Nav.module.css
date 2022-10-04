@@ -6,16 +6,15 @@ nav {
   padding-bottom: 5px;
   background-color: white;
   font-size: 1.6em;
-  /* border-bottom: 1px solid gray; */
 }
 
-nav > span {
+nav > div {
   display: flex;
   width: 100%;
   justify-content: center;
 }
 
-nav > span > a {
+nav > div > span {
   padding: 5px 15px;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
@@ -23,9 +22,16 @@ nav > span > a {
   text-transform: uppercase;
   border-bottom: 2px solid var(--mainColor);
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-nav > span > a:hover {
+nav > div > span:hover {
+  background-color: var(--mainColor);
+  color: white;
+}
+
+.onProfile,
+.onProjects {
   background-color: var(--mainColor);
   color: white;
 }
