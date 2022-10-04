@@ -28,9 +28,22 @@ header h1 {
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  transition: all 0.5s ease-in-out;
 }
 
 header img {
   width: 2.8rem;
   height: 2.8rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.onScrolled h1 {
+  font-size: 0.8em;
+}
+.onScrolled img {
+  width: 2rem;
+  height: 2rem;
+}
+.onScrolled nav span {
+  font-size: 0.7em;
 }
