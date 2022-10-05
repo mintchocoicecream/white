@@ -92,7 +92,7 @@ function Profile(){
                   <div className="contactForms">
                     <Contact />
                     <div className="close">
-                      <span onClick={onClose}><FontAwesomeIcon icon={faXmark}></FontAwesomeIcon></span>
+                      <span onClick={onClose}><FontAwesomeIcon icon={faXmark} size={"xl"}></FontAwesomeIcon></span>
                     </div>
                   </div>
               )}
