@@ -26,7 +26,7 @@ function Profile(){
                   <p>Seo Hyunjeong</p>
                 </div>
                 <div className="profileJob">
-                  <h5><FontAwesomeIcon icon={faLaptopCode}/>Web Dev.(Front-end)</h5>
+                  <h5><FontAwesomeIcon icon={faLaptopCode}/>Web Dev(Front-End)</h5>
                 </div>
                 <div className="profileSkills">
                   <h4>Skills</h4>

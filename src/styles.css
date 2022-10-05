@@ -11,6 +11,8 @@
   /* --mainColor: rgb(109, 109, 163); */
   /* --mainColor: rgb(165, 165, 204); */
   --mainColor: rgb(244, 207, 0);
+  --secondColor: rgba(244, 207, 0, 0.7);
+  --mintColor: #00ffb3;
   --boxColor: white;
   --font: "Noto Sans KR", sans-serif;
   --fontSerif: "Noto Serif KR", serif;
