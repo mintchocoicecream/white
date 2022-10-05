@@ -1,5 +1,5 @@
 import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faAward, faLaptopCode, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import Contact from "./Contact";
@@ -24,6 +24,9 @@ function Profile(){
                 <div className="profileName">
                   <h3>서현정</h3>
                   <p>Seo Hyunjeong</p>
+                </div>
+                <div className="profileJob">
+                  <h5><FontAwesomeIcon icon={faLaptopCode}/>Web Dev.(Front-end)</h5>
                 </div>
                 <div className="profileSkills">
                   <h4>Skills</h4>
@@ -80,6 +83,10 @@ function Profile(){
                 <div className="profileEdu">
                   <p>2013.03 ~ 2017.02</p>
                   <span>- 경상국립대학교 정보통신공학과</span>
+                </div>
+                <div className="profileCer">
+                  <h4>Honors & Awards</h4>
+                  <p><FontAwesomeIcon icon={faAward}></FontAwesomeIcon> 제 3회 산학협력 최종 프로젝트 경진대회 AI SW개발 분야 우수상 <span>(2020.12.18)</span></p>
                 </div>
                 <div className="profileCer">
                   <h4>Certificate</h4>
