@@ -3,9 +3,59 @@
   display: grid;
   gap: 0.8px;
   grid-template-columns: repeat(2, 1fr);
-  height: 100%;
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  height: 65%;
 }
 
 .main > div {
-  width: 100%;
+  height: 100%;
+}
+
+.main > div,
+.mainDiv > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainDiv > span {
+  background-color: var(--mainColor);
+  width: 50%;
+  height: 80%;
+  color: white;
+  font-weight: bold;
+  font-size: 1.8em;
+  cursor: pointer;
+  box-shadow: 0.1em 0.2em 0.4em var(--boxShadow);
+  transition: all 0.2s ease-in-out;
+}
+
+.mainDiv > span:hover {
+  opacity: 0.7;
+}
+
+#mainProf {
+  animation: showmAbout 1s ease-in-out;
+}
+
+#mainProj {
+  animation: showmProj 1s ease-in-out;
+}
+
+@keyframes showmAbout {
+  from {
+    transform: translateX(-20%);
+  }
+  to {
+  }
+}
+
+@keyframes showmProj {
+  from {
+    transform: translateX(20%);
+  }
+  to {
+  }
 }

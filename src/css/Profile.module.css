@@ -3,7 +3,6 @@
   margin: 0 8%;
   display: flex;
   justify-content: center;
-  height: 100%;
 }
 
 .mainProfile {
@@ -16,11 +15,16 @@
   position: relative;
   width: 100%;
   margin: 10px;
+  margin-bottom: 5%;
   padding: 10px 15px;
   opacity: 0;
   background-color: var(--boxColor);
   border: 3px solid var(--mainColor);
   animation: showContent 1s ease-in-out forwards;
+}
+
+.profileOne {
+  height: 100%;
 }
 
 @keyframes showContent {
@@ -54,8 +58,8 @@
 }
 
 .profileImg img {
-  width: 45%;
-  box-shadow: 0.2em 0.3em 0.8em rgb(179, 179, 179);
+  width: 35%;
+  box-shadow: 0.2em 0.3em 0.8em var(--boxShadow);
 }
 
 .profileName {

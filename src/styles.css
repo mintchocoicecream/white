@@ -14,6 +14,7 @@
   --secondColor: rgba(244, 207, 0, 0.7);
   --mintColor: #00ffb3;
   --boxColor: white;
+  --boxShadow: rgb(179, 179, 179);
   --font: "Noto Sans KR", sans-serif;
   --fontSerif: "Noto Serif KR", serif;
 }
@@ -36,6 +37,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 #root {
+  position: relative;
+  height: 100%;
   font-family: var(--fontSerif);
 }
 

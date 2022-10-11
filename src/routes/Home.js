@@ -51,9 +51,9 @@ function Home() {
           <nav id="navs">
               <div>
                 {profile===false ? (
-                  <span onClick={onProfile}>Profile</span>
+                  <span onClick={onProfile}>About</span>
                 ):(
-                  <span className="onProfile" onClick={onProfile}>Profile</span>
+                  <span className="onProfile" onClick={onProfile}>About</span>
                 )}
               </div>
               <div>
@@ -73,9 +73,9 @@ function Home() {
             <nav id="navs">
                 <div>
                   {profile===false ? (
-                    <span onClick={onProfile}>Profile</span>
+                    <span onClick={onProfile}>About</span>
                   ):(
-                    <span className="onProfile" onClick={onProfile}>Profile</span>
+                    <span className="onProfile" onClick={onProfile}>About</span>
                   )}
                 </div>
                 <div>
@@ -91,8 +91,12 @@ function Home() {
        
         {profile===false&projects===false && (
           <div className="main">
-            <Profile />
-            <Projects />
+            <div className="mainDiv">
+              <span id="mainProf" onClick={onProfile}>About</span>
+            </div>
+            <div className="mainDiv">
+              <span id="mainProj" onClick={onProjects}>Projects</span>
+            </div>
           </div>
         )}
         {profile===true &&(

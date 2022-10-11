@@ -21,17 +21,19 @@ nav > div > span {
   font-weight: bold;
   text-transform: uppercase;
   border-bottom: 2px solid var(--mainColor);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 
 nav > div > span:hover {
   background-color: var(--mainColor);
   color: white;
+  box-shadow: 0.1em 0.2em 0.4em var(--boxShadow);
 }
 
 .onProfile,
 .onProjects {
   background-color: var(--mainColor);
   color: white;
+  box-shadow: 0.1em 0.2em 0.4em var(--boxShadow);
 }
