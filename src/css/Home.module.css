@@ -1,3 +1,22 @@
+header {
+  opacity: 0;
+  animation: showHeaders 1s ease-in-out forwards;
+}
+
+#navs {
+  opacity: 0;
+  animation: showHeaders 0.8s ease-in-out forwards;
+  animation-delay: 0.8s;
+}
+
+@keyframes showHeaders {
+  from {
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .main {
   padding-top: 10%;
   display: grid;
@@ -27,21 +46,20 @@
   color: white;
   font-weight: bold;
   font-size: 1.8em;
+  opacity: 0;
   cursor: pointer;
   box-shadow: 0.1em 0.2em 0.4em var(--boxShadow);
   transition: all 0.2s ease-in-out;
 }
 
-.mainDiv > span:hover {
-  opacity: 0.7;
-}
-
 #mainProf {
-  animation: showmAbout 1s ease-in-out;
+  animation: showmAbout 1s ease-in-out forwards;
+  animation-delay: 0.8s;
 }
 
 #mainProj {
-  animation: showmProj 1s ease-in-out;
+  animation: showmProj 1s ease-in-out forwards;
+  animation-delay: 0.8s;
 }
 
 @keyframes showmAbout {
@@ -49,6 +67,7 @@
     transform: translateX(-20%);
   }
   to {
+    opacity: 1;
   }
 }
 
@@ -57,5 +76,10 @@
     transform: translateX(20%);
   }
   to {
+    opacity: 1;
   }
+}
+
+.mainDiv > span:hover {
+  background-color: var(--mintColor);
 }

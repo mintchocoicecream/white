@@ -1,5 +1,5 @@
 .onlyProj {
-  padding-top: 10%;
+  padding-top: 8%;
   display: flex;
   height: 100vh;
 }
@@ -75,9 +75,13 @@
 .mintchocoice a {
   width: 100%;
 }
-.mintchocoice img:hover {
+.mintchocoice:hover img {
   animation: shakedIce 0.5s ease-in infinite;
+  animation-delay: 0.2s;
 }
+/* .mintchocoice img:hover {
+  animation: shakedIce 0.5s ease-in infinite;
+} */
 
 @keyframes shakedIce {
   0% {
@@ -99,7 +103,6 @@
 .showProj {
   display: flex;
   width: inherit;
-  height: 100%;
   position: absolute;
   opacity: 0;
   animation: showProj 0.5s ease-in-out forwards;
@@ -117,8 +120,54 @@
 .projForm {
   position: relative;
   width: 100%;
-  background-color: pink;
+  height: 600px;
+  background-color: var(--mintColor);
   margin: 5%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.projForm::-webkit-scrollbar {
+  width: 6px;
+  background-color: var(--mintColor);
+  border-radius: 50px;
+}
+
+.projForm::-webkit-scrollbar-thumb {
+  background: var(--mainColor);
+}
+
+.projTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.projTitle h2 {
+  cursor: default;
+  width: fit-content;
+  line-height: 1em;
+  padding-bottom: 5px;
+  border-bottom: 3px solid black;
+}
+
+.projInfos {
+  margin: 0 12%;
+  margin-top: 3%;
+}
+
+.projIcons {
+  margin-bottom: 5%;
+}
+.projIcons > span {
+  margin: 0 3%;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.projIcons > span:hover {
+  color: white;
+  border-bottom: 1px solid white;
 }
 
 .closedProj {

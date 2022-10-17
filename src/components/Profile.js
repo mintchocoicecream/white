@@ -1,11 +1,13 @@
 import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
-import { faAward, faLaptopCode, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesLeft, faAnglesRight, faAward, faLaptopCode, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import Contact from "./Contact";
 
 function Profile(){
   const [contact, setContact] = useState(false);
+  const [pages, setPages] = useState(0);
+  
   function onContact(){
     if(contact===false){
       setContact(true);
@@ -14,8 +16,29 @@ function Profile(){
   function onClose(){
     setContact(false);
   }
+
+  function handleLeft(){
+    if(pages === 0){
+      setPages(2)
+    }else if(pages === 1){
+      setPages(0)
+    }else{
+      setPages(1)
+    }
+  }
+  function handleRight(){
+    if(pages === 0){
+      setPages(1)
+    }else if(pages === 1){
+      setPages(2)
+    }else{
+      setPages(0)
+    }
+  }
     return(
+      <>
         <div className="mainProfile">
+          {pages===0&&(
             <div className="profile">
               <div className="profileOne">
                 <div className="profileImg">
@@ -74,7 +97,6 @@ function Profile(){
                   <p>2021.04.19 ~ 2021.06.30</p>
                   <span>- (주)리안 개발팀 R&D 연구원</span>
                   <p>&nbsp;&nbsp;인공지능 IP 카메라 NVR 프로그램 개발 담당</p>
-                  <span><p>&nbsp;&nbsp;(스택: Python, OpenCV, QtPy5, QtDesigner)</p></span>
                 </div>
                 <div className="profileClass">
                   <p>2020.05.19 ~ 2020.11.22</p>
@@ -104,7 +126,21 @@ function Profile(){
                   </div>
               )}
             </div>
+          )}
+          {pages===1&&(
+            <div className="profile">1page 자소서, 취미</div>
+          )}
+          {pages===2&&(
+            <div className="profile">2page</div>
+          )}
+
         </div>
+        <div className="arrows">
+            <span onClick={handleLeft}><FontAwesomeIcon icon={faAnglesLeft} size="2x"/></span>
+            <span onClick={handleRight}><FontAwesomeIcon icon={faAnglesRight} size="2x"/></span>
+        </div>
+      </>
+
     )
 }
 

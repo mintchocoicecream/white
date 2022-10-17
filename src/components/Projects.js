@@ -1,7 +1,6 @@
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import ProjectsImg from "./ProjectsImg";
+import Infos from "./ProjectsInfos";
 
 function Projects(){
   const [shown, setShown] = useState(false);
@@ -13,10 +12,7 @@ function Projects(){
     const parents = e.currentTarget.id;
     setProj(parents);
   }
-  const unShow = () => {
-    setShown(false);
-    setProj("");
-  }
+  
     return(
         <div className="mainPj">
             <div className="projects">
@@ -74,12 +70,7 @@ function Projects(){
               </div>
               {shown&&(
                 <div className="showProj">
-                  {proj&& (
-                    <div className="projForm">
-                      <span>{proj}</span>
-                      <span className="closedProj" onClick={unShow}><FontAwesomeIcon icon={faXmark}/></span>
-                    </div>
-                  )}
+                  <Infos proj={proj} shownF={setShown} projF={setProj} />
                 </div>
               )}
             </div>

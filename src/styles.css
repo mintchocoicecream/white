@@ -13,7 +13,9 @@
   --mainColor: rgb(244, 207, 0);
   --secondColor: rgba(244, 207, 0, 0.7);
   --mintColor: #00ffb3;
+  --mintColor2: #78ffd0;
   --boxColor: white;
+  --transition: all 0.2s ease-in-out;
   --boxShadow: rgb(179, 179, 179);
   --font: "Noto Sans KR", sans-serif;
   --fontSerif: "Noto Serif KR", serif;
@@ -38,7 +40,7 @@ body::-webkit-scrollbar-thumb {
 
 #root {
   position: relative;
-  height: 100%;
+  height: 100vh;
   font-family: var(--fontSerif);
 }
 
